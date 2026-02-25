@@ -1,0 +1,30 @@
+﻿@model IEnumerable<AutoRent.Core.Entities.Car>
+
+<div class="container">
+    <h2 class="mb-4">Available Cars</h2>
+
+    <div class="row">
+        @foreach (var car in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">@car.Make @car.Model</h5>
+
+                        <p class="card-text">
+                            Registration: @car.RegNumber <br />
+                            Price per day: <strong>@car.PricePerDay лв</strong>
+                        </p>
+
+                        <a class="btn btn-dark"
+                           asp-controller="Cars"
+                           asp-action="Details"
+                           asp-route-id="@car.Id">
+                            Details / Rent
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
