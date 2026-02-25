@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 
-namespace rent.Data.Migrations
+namespace AutoRent.Infrastructure.Data.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {

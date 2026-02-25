@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using AutoRent.Core.Entities;
-using rent.Data;
-using Microsoft.AspNetCore.Authorization;
+﻿using AutoRent.Core.Entities;
 using AutoRent.Infrastructure.Data;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace AutoRent.Controllers
 {
-    
+
     public class CarsController : Controller
     {
         private readonly AppDbContext _context;

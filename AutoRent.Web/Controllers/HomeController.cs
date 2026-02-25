@@ -1,10 +1,8 @@
+using AutoRent.Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using rent.Data;
 using rent.Models;
 using System.Diagnostics;
-using AutoRent.Core.Entities;
-using AutoRent.Infrastructure.Data;
 
 namespace rent.Controllers
 {

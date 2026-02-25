@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace rent.Data.Migrations
+namespace AutoRent.Infrastructure.Data.Migrations
 {
     /// <inheritdoc />
     public partial class FixTotalPricePrecision : Migration
