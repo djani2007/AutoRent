@@ -8,15 +8,16 @@ using Microsoft.EntityFrameworkCore;
 using AutoRent.Core.Entities;
 using rent.Data;
 using Microsoft.AspNetCore.Authorization;
+using AutoRent.Infrastructure.Data;
 
 namespace AutoRent.Controllers
 {
     
     public class CarsController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly AppDbContext _context;
 
-        public CarsController(ApplicationDbContext context)
+        public CarsController(AppDbContext context)
         {
             _context = context;
         }

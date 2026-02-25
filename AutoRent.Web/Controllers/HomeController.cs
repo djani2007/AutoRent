@@ -4,15 +4,16 @@ using rent.Data;
 using rent.Models;
 using System.Diagnostics;
 using AutoRent.Core.Entities;
+using AutoRent.Infrastructure.Data;
 
 namespace rent.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly ApplicationDbContext _context;
+        private readonly AppDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
+        public HomeController(ILogger<HomeController> logger, AppDbContext context)
         {
             _logger = logger;
             _context = context;
